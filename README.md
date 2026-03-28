@@ -29,14 +29,16 @@ Running instance of Q-big-One Core Engine
 Ollama running locally (if using local LLMs)
 Option 1: Local Development (Node.js)
 Perfect for testing strategies on your laptop while connecting to a remote (or local) Q-big-One server.
-1. Clone and install dependencies:
+1) Clone and install dependencies:
 
 git clone https://github.com/mibii/Q-big-One-AI-Trading-Agent
+
 cd Q-big-One-AI-Trading-Agent
+
 npm install
 
-2. Create a .env file:
-Create a .env file in the root of the agent directory. Point it to the external URL of exchange.
+2) Create a .env file:
+Create a .env file in the root of the agent directory. 
 
 # Connection to Q-big-One Core
 API_BASE=https://qbig.one

@@ -30,15 +30,14 @@ Ollama running locally (if using local LLMs)
 Option 1: Local Development (Node.js)
 Perfect for testing strategies on your laptop while connecting to a remote (or local) Q-big-One server.
 1. Clone and install dependencies:
-code
-Bash
-git clone https://github.com/yourusername/qbig-ai-agent.git
-cd qbig-ai-agent
+
+git clone https://github.com/mibii/Q-big-One-AI-Trading-Agent
+cd Q-big-One-AI-Trading-Agent
 npm install
+
 2. Create a .env file:
-Create a .env file in the root of the agent directory. Point it to the external URL of your exchange.
-code
-Env
+Create a .env file in the root of the agent directory. Point it to the external URL of exchange.
+
 # Connection to Q-big-One Core
 API_BASE=https://qbig.one
 WS_URL=wss://qbig.one/ws
@@ -57,9 +56,10 @@ OLLAMA_MODEL=llama3.2
 # LLM Settings (Anthropic Claude example - uncomment to use)
 # ANTHROPIC_API_KEY=sk-ant-api03...
 3. Run the agent:
-code
-Bash
+
 npm run dev
+
+
 Option 2: Production (Docker Compose)
 Ideal for running a fleet of agents 24/7 on the same server as your Q-big-One Core Engine. This method provides ultra-low latency (<1ms) because it communicates entirely within the internal Docker network.
 1. Add the service to your main docker-compose.yml:

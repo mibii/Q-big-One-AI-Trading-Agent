@@ -1,0 +1,23 @@
+# --- AI AGENT ---
+  ai_agent:
+    build:
+      context: ./ai-agent
+      dockerfile: Dockerfile
+    container_name: q_bigone_ai_agent
+    restart: unless-stopped
+    depends_on:
+      - backend
+    networks:
+      - trading-net
+    environment:
+      # Сетевые настройки (используем имена контейнеров внутри docker сети)
+      - API_BASE=http://gateway:80
+      - WS_URL=ws://gateway:80/ws
+      
+      # Трейдинг настройки
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY} # Проброс из .env
+      - SYMBOL=EURUSD
+      - QUANTITY=0.1
+      - LOOP_INTERVAL=30
+      - MAX_POSITIONS=2
+      - MAX_DRAWDOWN_PCT=5.0

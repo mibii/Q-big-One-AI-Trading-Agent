@@ -72,7 +72,7 @@ container alongside the core engine.
 
 -   Node.js 18+ or Docker\
 -   Running instance of Q-big-One Core Engine\
--   Ollama running locally (if using local LLMs)
+-   Ollama running locally (if using local LLMs) How to see this https://github.com/mibii/ollama_running_locally/tree/main
 
 ------------------------------------------------------------------------
 

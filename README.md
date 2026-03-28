@@ -7,7 +7,7 @@ This agent leverages a hybrid approach: fast mathematical indicators
 reasoning power of Large Language Models (Local Llama 3.2 via Ollama or
 Cloud-based Claude 3/GPT-4).\
 The agent is designed to autonomously "mine Alpha" by passing prop firm
-challenges. It connects to the B-Book sandbox, manages risk, and trades
+challenges. It connects to the Q-big-One Prop Trading sandbox, manages risk, and trades
 24/7.
 
 ------------------------------------------------------------------------
@@ -16,7 +16,7 @@ challenges. It connects to the B-Book sandbox, manages risk, and trades
 
 -   **Anonymous Web3-style Auth:**\
     Zero friction. The agent automatically mints an anonymous JWT and
-    "claims" a free \$10k funded account from the exchange pool.
+    "claims" a free \1000$ funded account from the exchange pool.
 
 -   **LLM-Driven Decisions:**\
     Feeds live market data, technical indicators, and open positions

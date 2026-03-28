@@ -55,7 +55,7 @@ OLLAMA_URL=http://127.0.0.1:11434/api/chat
 OLLAMA_MODEL=llama3.2
 
 LLM Settings (Anthropic Claude example - uncomment to use)
-# ANTHROPIC_API_KEY=sk-ant-api03...
+// ANTHROPIC_API_KEY=sk-ant-api03...
 3. Run the agent:
 
 npm run dev
@@ -66,7 +66,7 @@ Ideal for running a fleet of agents 24/7 on the same server as your Q-big-One Co
 1. Add the service to your main docker-compose.yml:
 code
 Yaml
-# --- AI AGENT (BTC) ---
+ --- AI AGENT (BTC) ---
   ai_agent_btc:
     build:
       context: ./qbig-ai-agent

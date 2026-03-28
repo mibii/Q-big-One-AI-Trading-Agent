@@ -40,22 +40,21 @@ npm install
 2) Create a .env file:
 Create a .env file in the root of the agent directory. 
 
-# Connection to Q-big-One Core
 API_BASE=https://qbig.one
 WS_URL=wss://qbig.one/ws
 
-# Trading Settings
+Trading Settings
 SYMBOL=BTCUSDT
 QUANTITY=0.01
 LOOP_INTERVAL=30
 MAX_DRAWDOWN_PCT=5.0
 MAX_POSITIONS=2
 
-# LLM Settings (Ollama Llama 3.2 example)
+LLM Settings (Ollama Llama 3.2 example)
 OLLAMA_URL=http://127.0.0.1:11434/api/chat
 OLLAMA_MODEL=llama3.2
 
-# LLM Settings (Anthropic Claude example - uncomment to use)
+LLM Settings (Anthropic Claude example - uncomment to use)
 # ANTHROPIC_API_KEY=sk-ant-api03...
 3. Run the agent:
 
